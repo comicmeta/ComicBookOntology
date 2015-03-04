@@ -11,5 +11,5 @@ The current version of the Ontology (v0.13.1), reflects the research, contents, 
 Petiya, S. (2014). *Building a Semantic Web of comics: Publishing Linked Data in HTML/RDFa using a comic book ontology and metadata application profiles.* (Electronic Thesis).
 http://rave.ohiolink.edu/etdc/view?acc_num=kent1416791055
 
-Petiya, S. (2014). Converting personal comic book collection records to Linked Data. In W. Moen & A. Rushing (Eds.), *Proceedings of the International Conference on Dublin Core and Metadata Applications: Metadata Intersections: Bridging the Archipelago of Cultural Memory* (pp. 222-224). Austin, TX: Dublin Core Metadata Initiative. 
+Petiya, S. (2014). Converting personal comic book collection records to Linked Data. In W. Moen & A. Rushing (Eds.), *Proceedings of the International Conference on Dublin Core and Metadata Applications: Metadata Intersections: Bridging the Archipelago of Cultural Memory* (pp. 222-224). Austin, TX: Dublin Core Metadata Initiative.
 http://dcevents.dublincore.org/IntConf/dc-2014/paper/view/290
