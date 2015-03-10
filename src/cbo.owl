@@ -40,9 +40,9 @@
         <dc:description rdf:datatype="&xsd;string">A metadata vocabulary for describing comic books and comic book collections.</dc:description>
         <vann:preferredNamespaceUri rdf:datatype="&xsd;string">http://comicmeta.org/cbo</vann:preferredNamespaceUri>
         <vann:preferredNamespacePrefix>cbo</vann:preferredNamespacePrefix>
+        <dc:rights xml:lang="en">Copyright © Sean Petiya</dc:rights>
         <vann:preferredNamespaceUri>http://comicmeta.org/cbo/</vann:preferredNamespaceUri>
         <dc:title xml:lang="en">Comic Book Ontology</dc:title>
-        <dc:rights xml:lang="en">Copyright © Sean Petiya</dc:rights>
         <versionIRI rdf:resource="http://comicmeta.org/cbo/"/>
         <dc:creator rdf:resource="https://sean.petiya.com/#me"/>
     </Ontology>
@@ -2112,7 +2112,7 @@
     <!-- http://comicmeta.org/cbo/ComicUniverse -->
 
     <Class rdf:about="&cbo;ComicUniverse">
-        <rdfs:label xml:lang="en">Universe</rdfs:label>
+        <rdfs:label xml:lang="en">Comic Universe</rdfs:label>
         <rdfs:subClassOf rdf:resource="&schema;/CreativeWork"/>
         <rdfs:comment xml:lang="en">A comic universe.</rdfs:comment>
         <vs:term_status>unstable</vs:term_status>
