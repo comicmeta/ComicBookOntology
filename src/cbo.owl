@@ -943,7 +943,7 @@
     <ObjectProperty rdf:about="&cbo;penciller">
         <rdfs:label xml:lang="en">penciller</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
-        <rdfs:comment xml:lang="en">Associates a penciler with a comic work.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Associates a penciller with a comic work.</rdfs:comment>
         <rdfs:domain rdf:resource="&cbo;Comic"/>
         <rdfs:range rdf:resource="&cbo;Contributor"/>
         <rdfs:subPropertyOf rdf:resource="&cbo;contributor"/>
