@@ -1,0 +1,75 @@
+﻿<?xml version="1.0"?>
+
+<!--
+  NAME          : CBO RDF/XML Example X - Daredevil
+  DESCRIPTION   : Complete description of a certified copy of Daredevil #67.
+  DATE CREATED  : 2014/11/15
+  DATE MODIFIED : 2015/10/17
+  AUTHOR        : Sean Petiya
+-->
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.w3.org/2002/07/owl"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:cbo="http://comicmeta.org/cbo/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:schema="http://schema.org/">
+  
+  <!-- Publisher -->
+  <rdf:Description rdf:about="http://example.org/publisher/Marvel">
+    <cbo:publisherName>Marvel Comics</cbo:publisherName>
+  </rdf:Description>
+
+  <!-- Comic Series: Daredevil (1964) -->
+  <rdf:Description rdf:about="http://example.org/series/Daredevil_1964">
+    <cbo:seriesTitle>Daredevil</cbo:seriesTitle>
+    <cbo:alternativeTitle>Daredevil (1964)</cbo:alternativeTitle>
+    <cbo:seriesYear>1964</cbo:seriesYear>
+    <cbo:volumeNumber>1</cbo:volumeNumber>
+    <cbo:issue rdf:resource="http://example.org/issue/Daredevil_1964_67"></cbo:issue>
+    <cbo:publisher rdf:resource="http://example.org/publisher/Marvel"></cbo:publisher>
+  </rdf:Description>
+
+  <!-- Comic Issue: Daredevil (1964) #67 -->
+  <rdf:Description rdf:about="http://example.org/issue/Daredevil_1964_67">
+    <cbo:issueNumber>67</cbo:issueNumber>
+    <cbo:publicationDate>1970-08</cbo:publicationDate>
+    
+    <!-- Comic Story: 'Stilt-Man Stalks the Soundstage' -->
+    <cbo:story>
+      <rdf:Description>
+        <cbo:storyTitle>Stilt-Man Stalks the Soundstage</cbo:storyTitle>
+        <cbo:character rdf:resource="http://marvel.wikia.com/Daredevil" schema:name="Daredevil"></cbo:character>
+        <cbo:writer rdf:resource="http://viaf.org/viaf/95066336" schema:name="Roy Thomas"></cbo:writer>
+      </rdf:Description>
+    </cbo:story>
+    
+    <!-- Comic Page: Cover of Daredevil (1964) #67 -->
+    <cbo:page>
+      <rdf:Description rdf:about="http://example.org/issue/Daredevil_1964_67#cover">
+        <cbo:pageType rdf:resource="http://comicmeta.org/vocab/CoverPage"></cbo:pageType>
+        <cbo:penciller schema:name="Marie Severin"></cbo:penciller>
+        <cbo:letterer schema:name="Sam Rosen"></cbo:letterer>
+        <cbo:inker schema:name="Bill Everett"></cbo:inker>
+      </rdf:Description>
+    </cbo:page>
+    <cbo:coverPage rdf:resource="http://example.org/issue/Daredevil_1964_67#cover"></cbo:coverPage>
+  </rdf:Description>
+
+  <!-- Copy of a Comic Issue: Daredevil (1964) #67, CGC 3.5 -->
+  <rdf:Description rdf:about="http://example.org/copies/MyCopyOfDaredevil67">
+    <cbo:certNumber>0198524001</cbo:certNumber>
+    <cbo:copyOf rdf:resource="http://example.org/issue/Daredevil_1964_67"></cbo:copyOf>
+    <cbo:grade rdf:resource="http://comicmeta.org/vocab/3.5"></cbo:grade>
+    <cbo:itemOf rdf:resource="http://example.org/collection/MyCollection"></cbo:itemOf>
+  </rdf:Description>
+  
+  <!-- Comic Book Collection -->
+  <rdf:Description rdf:about="http://example.org/collection/MyCollection">
+    <dc:title>My Comic Book Collection</dc:title>
+    <cbo:owner rdf:resource="https://sean.petiya.com/#me" schema:name="Sean Petiya"></cbo:owner>
+  </rdf:Description>
+
+</rdf:RDF>
