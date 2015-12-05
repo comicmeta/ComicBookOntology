@@ -34,16 +34,16 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <Ontology rdf:about="http://comicmeta.org/cbo/">
-        <versionInfo rdf:datatype="&xsd;string">0.13.2</versionInfo>
-        <dc:issued rdf:datatype="&xsd;date">2014-03-21</dc:issued>
-        <dc:modified rdf:datatype="&xsd;date">2015-03-10</dc:modified>
+        <versionInfo rdf:datatype="&xsd;string">0.14.1</versionInfo>
         <dc:description rdf:datatype="&xsd;string">A metadata vocabulary for describing comic books and comic book collections.</dc:description>
         <vann:preferredNamespaceUri rdf:datatype="&xsd;string">http://comicmeta.org/cbo</vann:preferredNamespaceUri>
         <vann:preferredNamespacePrefix>cbo</vann:preferredNamespacePrefix>
-        <dc:rights xml:lang="en">Copyright © Sean Petiya</dc:rights>
         <vann:preferredNamespaceUri>http://comicmeta.org/cbo/</vann:preferredNamespaceUri>
+        <dc:modified xml:lang="en">2015-12-05</dc:modified>
         <dc:title xml:lang="en">Comic Book Ontology</dc:title>
+        <dc:rights xml:lang="en">Copyright © PD&amp;C, LLC</dc:rights>
         <versionIRI rdf:resource="http://comicmeta.org/cbo/"/>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0"/>
         <dc:creator rdf:resource="https://sean.petiya.com/#me"/>
     </Ontology>
     
@@ -63,14 +63,6 @@
     <!-- http://comicmeta.org/cbo/category -->
 
     <AnnotationProperty rdf:about="&cbo;category"/>
-    
-
-
-    <!-- http://comicmeta.org/cbo/dlabel -->
-
-    <AnnotationProperty rdf:about="&cbo;dlabel">
-        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
-    </AnnotationProperty>
     
 
 
@@ -3986,7 +3978,9 @@
 
     <!-- https://sean.petiya.com/#me -->
 
-    <NamedIndividual rdf:about="https://sean.petiya.com/#me"/>
+    <NamedIndividual rdf:about="https://sean.petiya.com/#me">
+        <rdfs:label>Sean Petiya</rdfs:label>
+    </NamedIndividual>
 </rdf:RDF>
 
 
