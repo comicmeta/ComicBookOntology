@@ -2,10 +2,19 @@
 A metadata vocabulary for describing comic books and comic book collections.
 
 ## Abstract
-The Comic Book Ontology is a metadata vocabulary for describing comic books and comic book collections. It is a work in progress and part of a larger research project exploring the organization and description of data about comic books.
+The Comic Book Ontology is an RDF/XML metadata vocabulary for describing comic books and comic book collections. It is a work in progress and part of a larger research project exploring the organization and description of data about comic books.
 
-## Status
-The current version of the Ontology (v0.13.2), reflects the research, contents, and discussion found in the thesis project that produced it. Starting with the next, post-thesis version (v0.14), the Ontology will be open to suggestions, input, contributions, etc. New licensing options are being explored.
+## Contributing
+
+In order to contribute directly to the Comic Book Ontology, start by forking the project on GitHub. The preferred ontology editor is [Protégé](http://protege.stanford.edu/). Once you have prepared your changes, submit a pull request. 
+
+You can also submit a change, bug, request, etc. by submitting an issue through GitHub.
+
+## License
+The Comic Book Ontology is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).
+
+## Recommended Citation
+Petiya, S. (2015). Comic Book Ontology. Retrieved from http://comicmeta.org/cbo
 
 ## References
 Petiya, S. (2014). *Building a Semantic Web of comics: Publishing Linked Data in HTML/RDFa using a comic book ontology and metadata application profiles.* (Electronic Thesis).
