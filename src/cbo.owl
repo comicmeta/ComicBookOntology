@@ -1408,9 +1408,9 @@
     <!-- http://comicmeta.org/cbo/certNumber -->
 
     <DatatypeProperty rdf:about="&cbo;certNumber">
-        <rdfs:label xml:lang="en">certificate number</rdfs:label>
-        <rdfs:comment xml:lang="en">The certificate number assigned to a graded copy of a comic by a guarantor.</rdfs:comment>
+        <rdfs:label xml:lang="en">certification number</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
+        <rdfs:comment xml:lang="en">The certification number assigned to a graded copy of a comic by a guarantor.</rdfs:comment>
         <rdfs:domain rdf:resource="&cbo;Copy"/>
         <rdfs:subPropertyOf rdf:resource="&dcterms;identifier"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
