@@ -38,12 +38,12 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://comicmeta.org/cbo/">
-        <owl:versionInfo rdf:datatype="&xsd;string">0.14.2</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&xsd;string">0.15.0</owl:versionInfo>
+        <dcterms:modified rdf:datatype="&xsd;string">2017-03-10</dcterms:modified>
         <dc:description rdf:datatype="&xsd;string">A metadata vocabulary for describing comic books and comic book collections.</dc:description>
         <vann:preferredNamespacePrefix rdf:datatype="&xsd;string">cbo</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="&xsd;string">http://comicmeta.org/cbo</vann:preferredNamespaceUri>
         <vann:preferredNamespaceUri rdf:datatype="&xsd;string">http://comicmeta.org/cbo/</vann:preferredNamespaceUri>
-        <dcterms:modified>2017-03-08</dcterms:modified>
         <dc:title xml:lang="en">Comic Book Ontology</dc:title>
         <owl:versionIRI rdf:resource="http://comicmeta.org/cbo/"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0"/>
@@ -1838,6 +1838,7 @@
         <rdfs:comment xml:lang="en">Any variance to the regular manifestation of a comic issue.</rdfs:comment>
         <rdfs:domain rdf:resource="&cbo;Issue"/>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <owl:equivalentProperty rdf:resource="https://bib.schema.org/variantCover"/>
     </owl:DatatypeProperty>
     
 
@@ -1956,6 +1957,15 @@
         <dc:description xml:lang="en">Used to indicate web content related to a resource.</dc:description>
         <rdfs:isDefinedBy xml:lang="en">http://schema.org</rdfs:isDefinedBy>
         <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://bib.schema.org/variantCover -->
+
+    <owl:DatatypeProperty rdf:about="https://bib.schema.org/variantCover">
+        <rdfs:isDefinedBy>https://bib.schema.org</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&cbo;variance"/>
     </owl:DatatypeProperty>
     
 
@@ -2299,6 +2309,7 @@
 
     <owl:Class rdf:about="&cbo;Issue">
         <rdfs:label xml:lang="en">Issue</rdfs:label>
+        <owl:equivalentClass rdf:resource="&schema;/ComicIssue"/>
         <rdfs:subClassOf rdf:resource="&cbo;Publication"/>
         <rdfs:subClassOf rdf:resource="&schema;/Product"/>
         <rdfs:subClassOf rdf:resource="&schema;/PublicationIssue"/>
@@ -2520,6 +2531,7 @@
 
     <owl:Class rdf:about="&cbo;Series">
         <rdfs:label xml:lang="en">Series</rdfs:label>
+        <owl:equivalentClass rdf:resource="&schema;/ComicSeries"/>
         <rdfs:subClassOf rdf:resource="&cbo;Publication"/>
         <rdfs:subClassOf rdf:resource="&schema;/Periodical"/>
         <vs:term_status rdf:datatype="&xsd;string">unstable</vs:term_status>
@@ -2543,6 +2555,7 @@
 
     <owl:Class rdf:about="&cbo;Story">
         <rdfs:label xml:lang="en">Story</rdfs:label>
+        <owl:equivalentClass rdf:resource="&schema;/ComicStory"/>
         <rdfs:subClassOf rdf:resource="&cbo;Comic"/>
         <vs:term_status rdf:datatype="&xsd;string">unstable</vs:term_status>
         <rdfs:comment xml:lang="en">A comic story.</rdfs:comment>
@@ -2609,6 +2622,52 @@
     <owl:Class rdf:about="&dctype;PhysicalObject">
         <qlabel rdf:datatype="&xsd;string">dctype:PhysicalObject</qlabel>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://purl.org/dc/dcmitype</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/ComicCoverArt -->
+
+    <owl:Class rdf:about="&schema;/ComicCoverArt">
+        <rdfs:subClassOf rdf:resource="&schema;/ComicStory"/>
+        <rdfs:subClassOf rdf:resource="&schema;/CoverArt"/>
+        <rdfs:isDefinedBy>http://bib.schema.org</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/ComicIssue -->
+
+    <owl:Class rdf:about="&schema;/ComicIssue">
+        <rdfs:subClassOf rdf:resource="&schema;/PublicationIssue"/>
+        <rdfs:isDefinedBy>http://bib.schema.org</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/ComicSeries -->
+
+    <owl:Class rdf:about="&schema;/ComicSeries">
+        <rdfs:subClassOf rdf:resource="&schema;/Periodical"/>
+        <rdfs:isDefinedBy>http://bib.schema.org</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/ComicStory -->
+
+    <owl:Class rdf:about="&schema;/ComicStory">
+        <rdfs:subClassOf rdf:resource="&schema;/CreativeWork"/>
+        <rdfs:isDefinedBy>http://bib.schema.org</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/CoverArt -->
+
+    <owl:Class rdf:about="&schema;/CoverArt">
+        <rdfs:subClassOf rdf:resource="&schema;/VisualArtwork"/>
+        <rdfs:isDefinedBy>http://bib.schema.org</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -2698,6 +2757,15 @@
         <rdfs:subClassOf rdf:resource="&schema;/CreativeWork"/>
         <rdfs:isDefinedBy rdf:datatype="&xsd;string">http://schema.org</rdfs:isDefinedBy>
         <qlabel rdf:datatype="&xsd;string">schema:PublicationVolume</qlabel>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/VisualArtwork -->
+
+    <owl:Class rdf:about="&schema;/VisualArtwork">
+        <rdfs:subClassOf rdf:resource="&schema;/CreativeWork"/>
+        <rdfs:isDefinedBy>http://schema.org</rdfs:isDefinedBy>
     </owl:Class>
     
 
