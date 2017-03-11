@@ -5,13 +5,10 @@
     <!ENTITY schema "http://schema.org" >
     <!ENTITY dcterms "http://purl.org/dc/terms/" >
     <!ENTITY cbo "http://comicmeta.org/cbo/" >
-    <!ENTITY cbo2 "http://comicmeta.org/cbo/#" >
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
     <!ENTITY vann "http://purl.org/vocab/vann/" >
     <!ENTITY dctype "http://purl.org/dc/dcmitype/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
-    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
@@ -27,13 +24,10 @@
      xml:base="http://comicmeta.org/cbo/"
      xmlns:schema="http://schema.org"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:cbo2="&cbo;#"
      xmlns:cbo="http://comicmeta.org/cbo/"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -98,12 +92,6 @@
         <rdfs:label xml:lang="en">standard</rdfs:label>
         <rdfs:comment xml:lang="en">A recommended encoding standard or guidelines.</rdfs:comment>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://comicmeta.org/cbo/#annotationProperty_4 -->
-
-    <owl:AnnotationProperty rdf:about="&cbo;#annotationProperty_4"/>
     
 
 
