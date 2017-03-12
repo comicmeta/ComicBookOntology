@@ -2155,7 +2155,7 @@
         <rdfs:label xml:lang="en">Contributor</rdfs:label>
         <rdfs:subClassOf rdf:resource="&schema;/Person"/>
         <vs:term_status rdf:datatype="&xsd;string">unstable</vs:term_status>
-        <rdfs:comment xml:lang="en">An agent contributing to the creation of a comic work.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A person contributing to the creation of a comic work.</rdfs:comment>
     </owl:Class>
     
 
