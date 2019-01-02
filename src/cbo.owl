@@ -38,8 +38,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://comicmeta.org/cbo/">
-        <owl:versionInfo rdf:datatype="&xsd;string">0.15.0</owl:versionInfo>
-        <dcterms:modified rdf:datatype="&xsd;string">2017-03-10</dcterms:modified>
+        <owl:versionInfo rdf:datatype="&xsd;string">0.15.1</owl:versionInfo>
+        <dcterms:modified rdf:datatype="&xsd;string">2019-01-01</dcterms:modified>
         <dc:description rdf:datatype="&xsd;string">A metadata vocabulary for describing comic books and comic book collections.</dc:description>
         <vann:preferredNamespacePrefix rdf:datatype="&xsd;string">cbo</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="&xsd;string">http://comicmeta.org/cbo</vann:preferredNamespaceUri>
@@ -204,9 +204,9 @@
     
 
 
-    <!-- http://comicmeta.org/issueOf -->
+    <!-- http://comicmeta.org/cbo/issueOf -->
 
-    <owl:ObjectProperty rdf:about="http://comicmeta.org/issueOf">
+    <owl:ObjectProperty rdf:about="&cbo;issueOf">
         <rdfs:label xml:lang="en">issue of</rdfs:label>
         <vs:term_status rdf:datatype="&xsd;string">unstable</vs:term_status>
         <rdfs:comment xml:lang="en">Links a comic issue to a volume.</rdfs:comment>
@@ -2155,7 +2155,7 @@
         <rdfs:label xml:lang="en">Contributor</rdfs:label>
         <rdfs:subClassOf rdf:resource="&schema;/Person"/>
         <vs:term_status rdf:datatype="&xsd;string">unstable</vs:term_status>
-        <rdfs:comment xml:lang="en">A person contributing to the creation of a comic work.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An agent contributing to the creation of a comic work.</rdfs:comment>
     </owl:Class>
     
 
