@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+<!--
+  NAME          : CBO RDF/XML Proposal - Balloon Type
+  DESCRIPTION   : Balloon type.
+-->
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#" xml:base="http://www.w3.org/2002/07/owl"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cbo="http://comicmeta.org/cbo/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:schema="http://schema.org/">
+
+    <rdf:Description rdf:about="#ClashOfQueens">
+        <cbo:seriesTitle>Grimm Fairy Tales presents Wonderland: Clash of Queens</cbo:seriesTitle>
+        <cbo:issue>
+            <rdf:Description rdf:about="#ClashOfQueens_Issue01">
+                <cbo:page>
+                    <rdf:Description rdf:about="#ClashOfQueens_Issue01_Page09">
+                        <cbo:penciller>
+                            <rdf:Description rdf:about="#ManuelPreitano">
+                                <schema:name>Manuel Preitano</schema:name>
+                            </rdf:Description>
+                        </cbo:penciller>
+                        <cbo:sequence>
+                            <rdf:Description rdf:about="#ClashOfQueens_Issue01_Page09_Seq1">
+                                <cbo:panel>
+                                    <rdf:Description rdf:about="#ClashOfQueens_Issue01_Page09_Seq1_Panel1">
+                                        <cbo:balloon>
+                                            <rdf:Description rdf:about="#ClashOfQueens_Issue01_Page09_Seq1_Panel1_Balloon1">
+                                                <schema:text>Who indeed.</schema:text>
+                                                <cbo:shape rdf:resource="https://www.wikidata.org/wiki/Q193410"></cbo:shape>
+                                            </rdf:Description>
+                                        </cbo:balloon>
+                                    </rdf:Description>
+                                </cbo:panel>
+
+                                <cbo:panel>
+                                    <rdf:Description rdf:about="#ClashOfQueens_Issue01_Page09_Seq1_Panel2">
+                                        <cbo:balloon>
+                                            <rdf:Description rdf:about="#ClashOfQueens_Issue01_Page09_Seq1_Panel2_Balloon1">
+                                                <schema:text>The graves? What happened to the graves?</schema:text>
+                                                <cbo:shape rdf:resource="https://www.wikidata.org/wiki/Q41159"></cbo:shape>
+                                            </rdf:Description>
+                                        </cbo:balloon>
+                                        <cbo:balloon>
+                                            <rdf:Description rdf:about="#ClashOfQueens_Issue01_Page09_Seq1_Panel2_Balloon2">
+                                                <schema:text>What indeed.</schema:text>
+                                                <cbo:shape rdf:resource="https://www.wikidata.org/wiki/Q193410"></cbo:shape>
+                                            </rdf:Description>
+                                        </cbo:balloon>
+                                        <cbo:balloon>
+                                            <rdf:Description rdf:about="#ClashOfQueens_Issue01_Page09_Seq1_Panel2_Balloon3">
+                                                <schema:text>They were just here.</schema:text>
+                                                <cbo:shape rdf:resource="https://www.wikidata.org/wiki/Q41159"></cbo:shape>
+                                            </rdf:Description>
+                                        </cbo:balloon>
+                                        <cbo:balloon>
+                                            <rdf:Description rdf:about="#ClashOfQueens_Issue01_Page09_Seq1_Panel2_Balloon4">
+                                                <schema:text>I know, my dear. My poor, sweet diamond queen.</schema:text>
+                                                <cbo:shape rdf:resource="https://www.wikidata.org/wiki/Q193410"></cbo:shape>
+                                            </rdf:Description>
+                                        </cbo:balloon>
+                                    </rdf:Description>
+                                </cbo:panel>
+
+                                <cbo:panel>
+                                    <rdf:Description rdf:about="#ClashOfQueens_Issue01_Page09_Seq1_Panel3">
+                                        <cbo:balloon>
+                                            <rdf:Description rdf:about="#ClashOfQueens_Issue01_Page09_Seq1_Panel3_Balloon1">
+                                                <schema:text>You don't remember, do you?</schema:text>
+                                                <cbo:shape rdf:resource="https://www.wikidata.org/wiki/Q193410"></cbo:shape>
+                                            </rdf:Description>
+                                        </cbo:balloon>
+                                        <cbo:balloon>
+                                            <rdf:Description rdf:about="#ClashOfQueens_Issue01_Page09_Seq1_Panel3_Balloon2">
+                                                <schema:text>Remember? I-I don't understand.</schema:text>
+                                                <cbo:shape rdf:resource="https://www.wikidata.org/wiki/Q41159"></cbo:shape>
+                                            </rdf:Description>
+                                        </cbo:balloon>
+                                    </rdf:Description>
+                                </cbo:panel>
+                            </rdf:Description>
+
+                        </cbo:sequence>
+                    </rdf:Description>
+                </cbo:page>
+            </rdf:Description>
+        </cbo:issue>
+    </rdf:Description>
+</rdf:RDF>
