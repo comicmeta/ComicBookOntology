@@ -1,0 +1,23 @@
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#" xml:base="http://www.w3.org/2002/07/owl"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cbo="http://comicmeta.org/cbo/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:schema="http://schema.org/">
+
+
+    <rdf:Description rdf:about="#CoverPage">
+        <cbo:pageType rdf:resource="http://comicmeta.org/vocab/CoverPage"></cbo:pageType>
+        <cbo:pageType rdf:resource="http://comicmeta.org/vocab/Spread"></cbo:pageType>
+        <cbo:page>
+            <rdf:Description rdf:about="#CoverPage1">
+            </rdf:Description>
+        </cbo:page>
+        <cbo:page>
+            <rdf:Description rdf:about="#CoverPage2">
+            </rdf:Description>
+        </cbo:page>
+    </rdf:Description>
+
+</rdf:RDF>
