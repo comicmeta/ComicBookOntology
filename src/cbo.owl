@@ -1641,8 +1641,8 @@
     <owl:DatatypeProperty rdf:about="http://comicmeta.org/cbo/pageNumber">
         <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Page"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="en">The page number of a comic.</rdfs:comment>
-        <rdfs:label xml:lang="en">page count</rdfs:label>
+        <rdfs:comment xml:lang="en">The number of a page in a comics document.</rdfs:comment>
+        <rdfs:label xml:lang="en">page number</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2203,7 +2203,7 @@
 
     <owl:Class rdf:about="http://comicmeta.org/cbo/Document">
         <rdfs:subClassOf rdf:resource="http://comicmeta.org/cbo/Comic"/>
-        <rdfs:comment xml:lang="en">A document composed of the pages in a comic publication.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A document composed of the pages in a comics publication.</rdfs:comment>
         <rdfs:label xml:lang="en">Document</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unstable</vs:term_status>
     </owl:Class>
@@ -2381,7 +2381,7 @@
 
     <owl:Class rdf:about="http://comicmeta.org/cbo/Page">
         <rdfs:subClassOf rdf:resource="http://comicmeta.org/cbo/Document"/>
-        <rdfs:comment xml:lang="en">One or more pages in a comic document.</rdfs:comment>
+        <rdfs:comment xml:lang="en">One or more pages in a comics document.</rdfs:comment>
         <rdfs:label xml:lang="en">Page</rdfs:label>
         <vs:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unstable</vs:term_status>
     </owl:Class>
