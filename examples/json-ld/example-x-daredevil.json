@@ -1,0 +1,43 @@
+// NAME          : CBO JSON-LD Example X - Daredevil
+// DESCRIPTION   : Complete description of a certified copy of Daredevil #67.
+// AUTHOR        : Sean Petiya
+// NOTES         : Comments are not valid JSON, remove comments.
+{
+    "@context": {
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "cbo": "http://comicmeta.org/cbo/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/"
+    },
+    "@id": "http://example.org/series/Daredevil_1964",
+    "@type": "cbo:Series",
+    "cbo:seriesTitle": "Daredevil",
+    "cbo:alternativeTitle": "Daredevil (1964)",
+    "cbo:seriesYear": "1974",
+    "cbo:volumeNumber": "1",
+    "cbo:issue": {
+        "@id": "http://example.org/issue/Daredevil_1964_67",
+        "@type": "cbo:Issue",
+        "cbo:issueNumber": "67",
+        "cbo:publicationDate": "1970-08",
+        "cbo:copy": {
+            "@id": "http://example.org/copies/MyCopyOfDaredevil67",
+            "@type": [
+                "cbo:Issue",
+                "cbo:Copy"
+            ],
+            "cbo:certNumber": "0198524001",
+            "cbo:grade": "http://comicmeta.org/vocab/3.5",
+            "cbo:itemOf": {
+                "@id": "http://example.org/collection/MyCollection",
+                "@type": "cbo:Collection",
+                "dc:title": "My Comic Book Collection",
+                "cbo:owner": {
+                    "@id": "https://sean.petiya.com/#me",
+                    "schema:name": "Sean Petiya"
+                }
+            }
+        }
+    }
+}
