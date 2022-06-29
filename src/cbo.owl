@@ -21,14 +21,13 @@
     <owl:Ontology rdf:about="http://comicmeta.org/cbo/">
         <owl:versionIRI rdf:resource="http://comicmeta.org/cbo/"/>
         <dc:creator rdf:resource="https://sean.petiya.com/#me"/>
-        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A metadata vocabulary for describing comic books and comic book collections.</dc:description>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An RDF metadata vocabulary for describing comic books and comic book collections.</dc:description>
         <dc:title xml:lang="en">Comic Book Ontology</dc:title>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0"/>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2019-01-01</dcterms:modified>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-28</dcterms:modified>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cbo</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://comicmeta.org/cbo</vann:preferredNamespaceUri>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://comicmeta.org/cbo/</vann:preferredNamespaceUri>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.15.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.15.4</owl:versionInfo>
     </owl:Ontology>
     
 
