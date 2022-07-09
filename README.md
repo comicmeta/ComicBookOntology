@@ -2,7 +2,7 @@
 An RDF metadata vocabulary and OWL ontology for describing comic books and comic book collections.
 
 ## Abstract
-The Comic Book Ontology is an RDF/XML metadata vocabulary for describing comic books and comic book collections. It is a work in progress and part of a larger research project exploring the organization and description of data about comic books.
+The Comic Book Ontology is an RDF/XML metadata vocabulary and OWL ontology for describing comic books and comic book collections. It is a work in progress and part of a larger research project exploring the organization and description of data about comic books.
 
 ## Contributing
 
