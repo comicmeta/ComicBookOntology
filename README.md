@@ -14,7 +14,7 @@ You can also submit a change, bug, request, etc. by submitting an issue through 
 The Comic Book Ontology is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).
 
 ## Recommended Citation
-Petiya, S. (2015). Comic Book Ontology. Retrieved from https://comicmeta.org/cbo
+Petiya, S. (2015). Comic Book Ontology. https://comicmeta.org/cbo
 
 ## References
 Petiya, S. (2014). *Building a Semantic Web of Comics: Publishing Linked Data in HTML/RDFa Using a Comic Book Ontology and Metadata Application Profiles* [Master's thesis, Kent State University]. OhioLINK Electronic Theses and Dissertations Center. http://rave.ohiolink.edu/etdc/view?acc_num=kent1416791055
