@@ -17,7 +17,8 @@ The Comic Book Ontology is licensed under a [Creative Commons Attribution 4.0 In
 Petiya, S. (2015). Comic Book Ontology. https://comicmeta.org/cbo
 
 ## References
-Petiya, S. (2014). *Building a Semantic Web of Comics: Publishing Linked Data in HTML/RDFa Using a Comic Book Ontology and Metadata Application Profiles* [Master's thesis, Kent State University]. OhioLINK Electronic Theses and Dissertations Center. http://rave.ohiolink.edu/etdc/view?acc_num=kent1416791055
+Petiya, S. (2014). *Building a semantic web of comics: Publishing linked data in HTML/RDFa using a comic book ontology and metadata application profiles* [Master's thesis, Kent State University]. OhioLINK Electronic Theses and Dissertations Center. http://rave.ohiolink.edu/etdc/view?acc_num=kent1416791055 
 
-Petiya, S. (2014). [Best practice poster: Converting personal comic book collection records to Linked Data] (http://dcevents.dublincore.org/IntConf/dc-2014/paper/view/290). In W. Moen & A. Rushing (Eds.), *Proceedings of the International Conference on Dublin Core and Metadata Applications 2014: Metadata Intersections: Bridging the Archipelago of Cultural Memory* (pp. 222-224). Austin, TX: Dublin Core Metadata Initiative.
+Petiya, S. (2014). Best practice poster: Converting personal comic book collection records to linked data. In W. Moen & A. Rushing (Eds.), *Proceedings of the International Conference on Dublin Core and Metadata Applications* (pp. 222-224). Austin, TX: Dublin Core Metadata Initiative.
+
 
