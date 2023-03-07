@@ -21,7 +21,7 @@
     <owl:Ontology rdf:about="http://comicmeta.org/cbo/">
         <owl:versionIRI rdf:resource="http://comicmeta.org/cbo/"/>
         <dc:creator rdf:resource="https://sean.petiya.com/#me"/>
-        <dc:description>An RDF metadata vocabulary for describing comic books and comic book collections.</dc:description>
+        <dc:description>An OWL ontology and RDF metadata vocabulary for describing comic books and comic book collections.</dc:description>
         <dc:title xml:lang="en">Comic Book Ontology</dc:title>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0"/>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-06</dcterms:modified>
