@@ -24,7 +24,7 @@
         <dc:description>An OWL ontology and RDF metadata vocabulary for describing comic books and comic book collections.</dc:description>
         <dc:title xml:lang="en">Comic Book Ontology</dc:title>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0"/>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-06</dcterms:modified>
+        <dcterms:modified>2023-03-08</dcterms:modified>
         <vann:preferredNamespacePrefix>cbo</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://comicmeta.org/cbo/</vann:preferredNamespaceUri>
         <owl:versionInfo>0.16.0</owl:versionInfo>
@@ -2548,7 +2548,7 @@
 
     <owl:Class rdf:about="http://comicmeta.org/cbo/Story">
         <owl:equivalentClass rdf:resource="http://schema.org/ComicStory"/>
-        <rdfs:subClassOf rdf:resource="http://comicmeta.org/cbo/Comic"/>
+        <rdfs:subClassOf rdf:resource="http://comicmeta.org/cbo/Sequence"/>
         <rdfs:comment xml:lang="en">A comic story.</rdfs:comment>
         <rdfs:label xml:lang="en">Story</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
