@@ -313,10 +313,11 @@
 
     <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/balloon">
         <rdfs:subPropertyOf rdf:resource="http://comicmeta.org/cbo/sequence"/>
-        <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Panel"/>
+        <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Sequence"/>
         <rdfs:range rdf:resource="http://comicmeta.org/cbo/Balloon"/>
         <rdfs:comment xml:lang="en">Links a panel to a word balloon.</rdfs:comment>
         <rdfs:label xml:lang="en">balloon</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -378,7 +379,7 @@
 
     <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/caption">
         <rdfs:subPropertyOf rdf:resource="http://comicmeta.org/cbo/sequence"/>
-        <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Panel"/>
+        <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Sequence"/>
         <rdfs:range rdf:resource="http://comicmeta.org/cbo/Caption"/>
         <rdfs:comment xml:lang="en">Links a panel to a caption.</rdfs:comment>
         <rdfs:label xml:lang="en">caption</rdfs:label>
@@ -706,8 +707,11 @@
 
     <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/gutter">
         <rdfs:subPropertyOf rdf:resource="http://comicmeta.org/cbo/sequence"/>
+        <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Sequence"/>
+        <rdfs:range rdf:resource="http://comicmeta.org/cbo/Gutter"/>
         <rdfs:comment>Links a gutter to a sequence or group of sequences.</rdfs:comment>
         <rdfs:label>gutter</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
     </owl:ObjectProperty>
     
 
@@ -896,7 +900,8 @@
     <!-- http://comicmeta.org/cbo/page -->
 
     <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/page">
-        <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Document"/>
+        <rdfs:subPropertyOf rdf:resource="http://comicmeta.org/cbo/sequence"/>
+        <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Sequence"/>
         <rdfs:range rdf:resource="http://comicmeta.org/cbo/Page"/>
         <rdfs:comment xml:lang="en">Links a comic page to a document.</rdfs:comment>
         <rdfs:label xml:lang="en">page</rdfs:label>
@@ -1082,7 +1087,7 @@
     <!-- http://comicmeta.org/cbo/sequence -->
 
     <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/sequence">
-        <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Page"/>
+        <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Comic"/>
         <rdfs:range rdf:resource="http://comicmeta.org/cbo/Sequence"/>
         <rdfs:comment xml:lang="en">Links a sequence to a page.</rdfs:comment>
         <rdfs:label xml:lang="en">sequence</rdfs:label>
