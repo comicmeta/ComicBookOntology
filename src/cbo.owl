@@ -702,6 +702,16 @@
     
 
 
+    <!-- http://comicmeta.org/cbo/gutter -->
+
+    <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/gutter">
+        <rdfs:subPropertyOf rdf:resource="http://comicmeta.org/cbo/sequence"/>
+        <rdfs:comment>Links a gutter to a sequence or group of sequences.</rdfs:comment>
+        <rdfs:label>gutter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://comicmeta.org/cbo/imprint -->
 
     <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/imprint">
@@ -2000,7 +2010,7 @@
 
     <owl:Class rdf:about="http://comicmeta.org/cbo/Balloon">
         <rdfs:subClassOf rdf:resource="http://comicmeta.org/cbo/Sequence"/>
-        <rdfs:comment xml:lang="en">A word balloon containing dialogue or thought.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A word balloon in a comics sequence containing dialogue or thought.</rdfs:comment>
         <rdfs:label xml:lang="en">Balloon</rdfs:label>
         <rdfs:seeAlso>http://dcl.slis.indiana.edu/cbml/schema/cbml.html#TEI.balloon</rdfs:seeAlso>
         <vs:term_status>unstable</vs:term_status>
@@ -2282,6 +2292,17 @@
         <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
         <rdfs:comment xml:lang="en">An organization that guarantees the stated condition of a comic book.</rdfs:comment>
         <rdfs:label xml:lang="en">Guarantor</rdfs:label>
+        <vs:term_status>unstable</vs:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://comicmeta.org/cbo/Gutter -->
+
+    <owl:Class rdf:about="http://comicmeta.org/cbo/Gutter">
+        <rdfs:subClassOf rdf:resource="http://comicmeta.org/cbo/Sequence"/>
+        <rdfs:comment xml:lang="en">The space between panels in a comics sequence.</rdfs:comment>
+        <rdfs:label xml:lang="en">Gutter</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
     </owl:Class>
     
