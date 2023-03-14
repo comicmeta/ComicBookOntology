@@ -24,7 +24,7 @@
         <dc:description>An OWL ontology and RDF metadata vocabulary for describing comic books and comic book collections.</dc:description>
         <dc:title xml:lang="en">Comic Book Ontology</dc:title>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0"/>
-        <dcterms:modified>2023-03-08</dcterms:modified>
+        <dcterms:modified>2023-03-14</dcterms:modified>
         <vann:preferredNamespacePrefix>cbo</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://comicmeta.org/cbo/</vann:preferredNamespaceUri>
         <owl:versionInfo>0.16.0</owl:versionInfo>
@@ -315,7 +315,7 @@
         <rdfs:subPropertyOf rdf:resource="http://comicmeta.org/cbo/sequence"/>
         <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Sequence"/>
         <rdfs:range rdf:resource="http://comicmeta.org/cbo/Balloon"/>
-        <rdfs:comment xml:lang="en">Links a panel to a word balloon.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links a panel to a comics sequence.</rdfs:comment>
         <rdfs:label xml:lang="en">balloon</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
     </owl:ObjectProperty>
@@ -381,7 +381,7 @@
         <rdfs:subPropertyOf rdf:resource="http://comicmeta.org/cbo/sequence"/>
         <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Sequence"/>
         <rdfs:range rdf:resource="http://comicmeta.org/cbo/Caption"/>
-        <rdfs:comment xml:lang="en">Links a panel to a caption.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links a caption to a comics sequence.</rdfs:comment>
         <rdfs:label xml:lang="en">caption</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
     </owl:ObjectProperty>
@@ -709,8 +709,8 @@
         <rdfs:subPropertyOf rdf:resource="http://comicmeta.org/cbo/sequence"/>
         <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Sequence"/>
         <rdfs:range rdf:resource="http://comicmeta.org/cbo/Gutter"/>
-        <rdfs:comment>Links a gutter to a sequence or group of sequences.</rdfs:comment>
-        <rdfs:label>gutter</rdfs:label>
+        <rdfs:comment xml:lang="en">Links a gutter to a comics sequence.</rdfs:comment>
+        <rdfs:label xml:lang="en">gutter</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
     </owl:ObjectProperty>
     
@@ -903,7 +903,7 @@
         <rdfs:subPropertyOf rdf:resource="http://comicmeta.org/cbo/sequence"/>
         <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Sequence"/>
         <rdfs:range rdf:resource="http://comicmeta.org/cbo/Page"/>
-        <rdfs:comment xml:lang="en">Links a comic page to a document.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links a page to a comics sequence.</rdfs:comment>
         <rdfs:label xml:lang="en">page</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
     </owl:ObjectProperty>
@@ -928,7 +928,7 @@
         <rdfs:subPropertyOf rdf:resource="http://comicmeta.org/cbo/sequence"/>
         <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Sequence"/>
         <rdfs:range rdf:resource="http://comicmeta.org/cbo/Panel"/>
-        <rdfs:comment xml:lang="en">Links a sequence to a comic panel.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links a panel to a comics sequence.</rdfs:comment>
         <rdfs:label xml:lang="en">panel</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
     </owl:ObjectProperty>
@@ -1087,9 +1087,10 @@
     <!-- http://comicmeta.org/cbo/sequence -->
 
     <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/sequence">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
         <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Comic"/>
         <rdfs:range rdf:resource="http://comicmeta.org/cbo/Sequence"/>
-        <rdfs:comment xml:lang="en">Links a sequence to a page.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links a sequence to a comic.</rdfs:comment>
         <rdfs:label xml:lang="en">sequence</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
     </owl:ObjectProperty>
@@ -1139,10 +1140,10 @@
     <!-- http://comicmeta.org/cbo/story -->
 
     <owl:ObjectProperty rdf:about="http://comicmeta.org/cbo/story">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
-        <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Issue"/>
+        <rdfs:subPropertyOf rdf:resource="http://comicmeta.org/cbo/sequence"/>
+        <rdfs:domain rdf:resource="http://comicmeta.org/cbo/Comic"/>
         <rdfs:range rdf:resource="http://comicmeta.org/cbo/Story"/>
-        <rdfs:comment xml:lang="en">Links a comic issue to a story.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Links a story to a comic.</rdfs:comment>
         <rdfs:label xml:lang="en">story</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
     </owl:ObjectProperty>
