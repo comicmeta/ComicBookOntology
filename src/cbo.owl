@@ -2106,7 +2106,7 @@
 
     <owl:Class rdf:about="http://comicmeta.org/cbo/Comic">
         <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
-        <rdfs:comment xml:lang="en">A visual and literary work of sequential art.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A creative work of sequential art: the juxtaposition of text, images, and other pictorial elements to communicate information.</rdfs:comment>
         <rdfs:label xml:lang="en">Comic</rdfs:label>
         <vs:term_status>testing</vs:term_status>
     </owl:Class>
