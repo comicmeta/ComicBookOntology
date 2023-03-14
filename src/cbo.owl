@@ -2015,7 +2015,7 @@
 
     <owl:Class rdf:about="http://comicmeta.org/cbo/Balloon">
         <rdfs:subClassOf rdf:resource="http://comicmeta.org/cbo/Sequence"/>
-        <rdfs:comment xml:lang="en">A word balloon in a comics sequence containing dialogue or thought.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A word balloon in a comics sequence containing dialogue, thought, or sound.</rdfs:comment>
         <rdfs:label xml:lang="en">Balloon</rdfs:label>
         <rdfs:seeAlso>http://dcl.slis.indiana.edu/cbml/schema/cbml.html#TEI.balloon</rdfs:seeAlso>
         <vs:term_status>unstable</vs:term_status>
@@ -2060,7 +2060,7 @@
 
     <owl:Class rdf:about="http://comicmeta.org/cbo/Caption">
         <rdfs:subClassOf rdf:resource="http://comicmeta.org/cbo/Sequence"/>
-        <rdfs:comment xml:lang="en">A caption containing narration.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A caption containing narration in a comics sequence.</rdfs:comment>
         <rdfs:label xml:lang="en">Caption</rdfs:label>
         <rdfs:seeAlso>http://dcl.slis.indiana.edu/cbml/schema/cbml.html#TEI.caption</rdfs:seeAlso>
         <vs:term_status>unstable</vs:term_status>
@@ -2429,7 +2429,7 @@
 
     <owl:Class rdf:about="http://comicmeta.org/cbo/Panel">
         <rdfs:subClassOf rdf:resource="http://comicmeta.org/cbo/Sequence"/>
-        <rdfs:comment xml:lang="en">A visual frame containing part of a sequence.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A visual frame containing part of a comics sequence.</rdfs:comment>
         <rdfs:label xml:lang="en">Panel</rdfs:label>
         <rdfs:seeAlso>http://dcl.slis.indiana.edu/cbml/schema/cbml.html#TEI.panel</rdfs:seeAlso>
         <vs:term_status>unstable</vs:term_status>
@@ -2539,7 +2539,7 @@
 
     <owl:Class rdf:about="http://comicmeta.org/cbo/Sequence">
         <rdfs:subClassOf rdf:resource="http://comicmeta.org/cbo/Comic"/>
-        <rdfs:comment xml:lang="en">A visual sequence of juxtaposed panels and pictorial elements.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A sequence of juxtaposed panels, text, and other pictorial elements.</rdfs:comment>
         <rdfs:label xml:lang="en">Sequence</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
     </owl:Class>
@@ -2575,7 +2575,7 @@
     <owl:Class rdf:about="http://comicmeta.org/cbo/Story">
         <owl:equivalentClass rdf:resource="http://schema.org/ComicStory"/>
         <rdfs:subClassOf rdf:resource="http://comicmeta.org/cbo/Sequence"/>
-        <rdfs:comment xml:lang="en">A comic story.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A comics story.</rdfs:comment>
         <rdfs:label xml:lang="en">Story</rdfs:label>
         <vs:term_status>unstable</vs:term_status>
     </owl:Class>
