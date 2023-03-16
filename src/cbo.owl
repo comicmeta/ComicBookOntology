@@ -24,7 +24,7 @@
         <dc:description>An OWL ontology and RDF metadata vocabulary for describing comic books and comic book collections.</dc:description>
         <dc:title xml:lang="en">Comic Book Ontology</dc:title>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0"/>
-        <dcterms:modified>2023-03-14</dcterms:modified>
+        <dcterms:modified>2023-03-15</dcterms:modified>
         <vann:preferredNamespacePrefix>cbo</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://comicmeta.org/cbo/</vann:preferredNamespaceUri>
         <owl:versionInfo>0.16.0</owl:versionInfo>
