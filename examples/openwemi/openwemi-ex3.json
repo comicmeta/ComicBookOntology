@@ -1,0 +1,69 @@
+{
+    "@context": {
+      "openWEMI": "https://example.org/openWEMI/",
+      "schema": "https://schema.org/",
+      "comics": "https://comics.org/issue/",
+      "cbo":"https://comicmeta.org/cbo/",
+      "@base": "https://comicmeta.org/example/"
+    },
+    "@id": "#daredevil_v1_67",
+    "@type": ["openWEMI:Work", "schema:CreativeWork", "cbo:Comic"],
+    "schema:workExample": [
+        {"@id":"comics:23651"},
+        {"@id":"comics:505288"}
+    ],
+    "openWEMI:expresses": [
+        {
+            "@id":"#daredevil_v1_67(en)",
+            "@type":"openWEMI:Expression",
+            "schema:language":{
+                "schema:alternateName":"en"
+            },
+            "openWEMI:manifests": [
+                {
+                    "@id":"comics:23651",
+                    "@type":["openWEMI:Manifestation","schema:ComicIssue","cbo:Issue"],
+                    "schema:issueNumber":67,
+                    "openWEMI:instantiates": [
+                        {
+                            "@id":"#daredevil_v1_67_gd",
+                            "@type":["openWEMI:Item","cbo:Copy"],
+                            "cbo:condition":"cbo:GD"
+                        },
+                        {
+                            "@id":"#daredevil_v1_67_vg",
+                            "@type":["openWEMI:Item","cbo:Copy"],
+                            "openWEMI:instantiates":[
+                                {
+                                    "@id":"#daredevil_v1_67_0198524001",
+                                    "@type":["openWEMI:Item","cbo:Copy"],
+                                    "schema:identifier":"0198524001",
+                                    "cbo:grade":"cbo:3.5"
+                                }
+                            ]
+                        },
+                        {
+                            "@id":"#daredevil_v1_67_fn",
+                            "@type":["openWEMI:Item","cbo:Copy"],
+                            "cbo:condition":"cbo:FN"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id":"#daredevil_v1_67(es)",
+            "@type":"openWEMI:Expression",
+            "schema:language":{
+                "schema:alternateName":"es"
+            },
+            "openWEMI:manifests":[
+                {
+                    "@id":"comics:505288",
+                    "@type":["openWEMI:Manifestation","schema:ComicIssue"],
+                    "schema:issueNumber":67
+                }
+            ]
+        }
+    ]
+  }

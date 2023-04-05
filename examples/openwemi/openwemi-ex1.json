@@ -1,0 +1,51 @@
+{
+    "@context": {
+      "openWEMI": "https://example.org/openWEMI/",
+      "comics": "https://comics.org/issue/",
+      "@base": "https://comicmeta.org/example/"
+    },
+    "@id": "#daredevil_v1_67",
+    "@type": "openWEMI:Work",
+    "openWEMI:expresses": [
+        {
+            "@id":"#daredevil_v1_67(en)",
+            "@type":"openWEMI:Expression",
+            "openWEMI:manifests": [
+                {
+                    "@id":"comics:23651",
+                    "@type":"openWEMI:Manifestation",
+                    "openWEMI:instantiates": [
+                        {
+                            "@id":"#daredevil_v1_67_gd",
+                            "@type":"openWEMI:Item"
+                        },
+                        {
+                            "@id":"#daredevil_v1_67_vg",
+                            "@type":"openWEMI:Item",
+                            "openWEMI:instantiates":[
+                                {
+                                    "@id":"#daredevil_v1_67_0198524001",
+                                    "@type":"openWEMI:Item"
+                                }
+                            ]
+                        },
+                        {
+                            "@id":"#daredevil_v1_67_fn",
+                            "@type":"openWEMI:Item"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id":"#daredevil_v1_67(es)",
+            "@type":"openWEMI:Expression",
+            "openWEMI:manifests":[
+                {
+                    "@id":"comics:505288",
+                    "@type":"openWEMI:Manifestation"
+                }
+            ]
+        }
+    ]
+  }

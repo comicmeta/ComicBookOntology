@@ -1,0 +1,65 @@
+{
+    "@context": {
+      "openWEMI": "https://example.org/openWEMI/",
+      "schema": "https://schema.org/",
+      "comics": "https://comics.org/issue/",
+      "@base": "https://comicmeta.org/example/"
+    },
+    "@id": "#daredevil_v1_67",
+    "@type": ["openWEMI:Work", "schema:CreativeWork"],
+    "schema:workExample": [
+        {"@id":"comics:23651"},
+        {"@id":"comics:505288"}
+    ],
+    "openWEMI:expresses": [
+        {
+            "@id":"#daredevil_v1_67(en)",
+            "@type":"openWEMI:Expression",
+            "schema:language":{
+                "schema:alternateName":"en"
+            },
+            "openWEMI:manifests": [
+                {
+                    "@id":"comics:23651",
+                    "@type":["openWEMI:Manifestation","schema:ComicIssue"],
+                    "schema:issueNumber":67,
+                    "openWEMI:instantiates": [
+                        {
+                            "@id":"#daredevil_v1_67_gd",
+                            "@type":"openWEMI:Item"
+                        },
+                        {
+                            "@id":"#daredevil_v1_67_vg",
+                            "@type":"openWEMI:Item",
+                            "openWEMI:instantiates":[
+                                {
+                                    "@id":"#daredevil_v1_67_0198524001",
+                                    "@type":"openWEMI:Item",
+                                    "schema:identifier":"0198524001"
+                                }
+                            ]
+                        },
+                        {
+                            "@id":"#daredevil_v1_67_fn",
+                            "@type":"openWEMI:Item"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "@id":"#daredevil_v1_67(es)",
+            "@type":"openWEMI:Expression",
+            "schema:language":{
+                "schema:alternateName":"es"
+            },
+            "openWEMI:manifests":[
+                {
+                    "@id":"comics:505288",
+                    "@type":["openWEMI:Manifestation","schema:ComicIssue"],
+                    "schema:issueNumber":67
+                }
+            ]
+        }
+    ]
+  }
