@@ -1,0 +1,68 @@
+@prefix openwemi: <https://example.org/openwemi/> .
+@prefix cbo: <https://comicmeta.org/cbo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# poc alignment with openwemi
+
+# class alignment
+
+## work
+
+cbo:Comic rdfs:subClassOf openwemi:Work .
+
+## work / expression
+
+cbo:Sequence rdfs:subClassOf openwemi:Work, openwemi:Expression .
+cbo:Story rdfs:subClassOf openwemi:Work, openwemi:Expression .
+cbo:Page rdfs:subClassOf openwemi:Work, openwemi:Expression .
+
+## work / manifestation
+
+cbo:ComicSeries rdfs:subClassOf openwemi:Work, openwemi:Manifestation .
+cbo:ComicVolume rdfs:subClassOf openwemi:Work, openwemi:Manifestation .
+cbo:ComicIssue rdfs:subClassOf openwemi:Work, openwemi:Manifestation .
+
+## item
+
+cbo:Copy rdfs:subClassOf openwemi:Item .
+cbo:Artwork rdfs:subClassOf openwemi:Item .
+
+## property alignment
+
+# expressions
+
+cbo:balloon rdfs:range openwemi:Expression .
+cbo:caption rdfs:range openwemi:Expression .
+cbo:gutter rdfs:range openwemi:Expression .
+cbo:page rdfs:range openwemi:Expression .
+cbo:panel rdfs:range openwemi:Expression .
+cbo:adaptation rdfs:range openwemi:Expression .
+cbo:sequence rdfs:range openwemi:Expression .
+cbo:story rdfs:range openwemi:Expression .
+cbo:storyArc rdfs:range openwemi:Expression .
+cbo:reprints rdfs:range openwemi:Expression .
+cbo:collects rdfs:range openwemi:Expression .
+cbo:translates rdfs:range openwemi:Expression .
+
+# manifestations
+
+cbo:series rdfs:range openwemi:Manifestation .
+cbo:volume rdfs:range openwemi:Manifestation .
+cbo:issue rdfs:range openwemi:Manifestation .
+
+cbo:diamondCode rdfs:domain openwemi:Manifestation .
+cbo:distributedBy rdfs:domain openwemi:Manifestation .
+cbo:distributorCode rdfs:domain openwemi:Manifestation .
+cbo:format rdfs:domain openwemi:Manifestation .
+cbo:rating rdfs:domain openwemi:Manifestation .
+cbo:upc rdfs:domain openwemi:Manifestation .
+
+# items
+
+cbo:copy rdfs:range openwemi:Item .
+cbo:artwork rdfs:range openwemi:Item .
+
+cbo:condition rdfs:domain openwemi:Item .
+cbo:grade rdfs:domain openwemi:Item .
+cbo:guaranteedBy rdfs:domain openwemi:Item .
+cbo:certNumber rdfs:domain openwemi:Item .
